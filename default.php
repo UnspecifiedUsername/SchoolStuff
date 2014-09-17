@@ -38,6 +38,29 @@ function NewPage() {
 <script>
 
 function NewPage() {
+  document.location.href= "https://github.com/UnspecifiedUsername/SchoolStuff/blob/master/default.php"
+}
+
+</script>
+
+<body>
+
+<input type="button" value="View Source on GitHub!" onClick="NewPage()">
+
+
+</body>
+<p id="result" name="r1">
+<br />
+</p>
+</font>
+</body>
+</body>
+</html>
+
+<input type="button" value="View Full Writeup!" onClick="NewPage()">
+<script>
+
+function NewPage() {
   document.location.href= "https://github.com/UnspecifiedUsername/SchoolStuff"
 }
 
