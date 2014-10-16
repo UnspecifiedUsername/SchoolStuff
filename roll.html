@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>The Game Of Pig</title>
+<body background="h.jpg">
+  <center>
+<script>
+function roll() {
+    return Math.floor(Math.random() * 6) + 1;
+}
+function update() {
+    var die = document.getElementById("die"),
+        score = document.getElementById("score"),
+        d,
+        d = roll();
+        die.innerHTML = d;
+        if (d !== 1) {
+            score.innerHTML = parseInt(score.innerHTML, 10) + d;
+        }
+        if (d === 1) {
+            score.innerHTML = 0;
+        }
+}
+</script>
+</head>
+<body>
+    <form>
+
+      <h1>The Game Of Pig</h1>
+<br>
+<br>
+<br>
+<div style="width:200px;height:108px;border:4px solid black;">
+        <h2>Total: <span id="score">0</span></h2>
+
+        <div>
+            <span id="die">0</span>
+        </div>
+        <input type="button" value="Roll" id="roll" onclick="update();"></center>
+    </form>
+</body>
+</html>
